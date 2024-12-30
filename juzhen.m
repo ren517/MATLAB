@@ -60,8 +60,15 @@ sum(A , 2); %计算每一行的和
 sum(A,"all");
 prod(A , "all")
 
+%% 关系运算
+x = randi([1 , 10],5,3);
+y = x > 5;
+sum(y);
+sum(y(:)); % sum(y,"all");
 
-
-
+n = 1e5;
+m = randi([0,1],n,1);
+l = m == 0;
+pl = sum(l(:)) / n
 
 
